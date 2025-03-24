@@ -3,8 +3,52 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=divice-width">
-        <link rel="stylesheet" href="css/style.css      ">
+        <link rel="stylesheet" href="css/style.css">
     <style>
+        *{
+        }
+        .div1{
+            width: 300px;
+            height: 100px;
+            padding: 50px;
+            border: 2px solid blue;
+        }
+        .div2{
+            width: 300px;
+            height: 100px;
+            border: 2px solid rgb(199, 37, 53);
+        }
+        .div3{
+            width: 300px;
+            height: 100px;
+            padding: 50px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+        .div4{
+            width: 300px;
+            height: 100px;
+            padding: 50;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+        #MAIN{
+            display: flex;
+            flex-direction: column;
+        }
+        #MAIN div{
+            width: 50px;
+            height: 50px;
+        }
+        #maine{
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+        }
+        #maine div{
+            width: 70px;
+            height: 70px;
+        }
     </style>
     </head>
     <body>
@@ -12,13 +56,38 @@
             <nav>
                 <ul>
                     <a href="index.html" id="active"><li>home</li></a>
-                    <a href="inde" id="photos"><li></li>photos</a>
-                    <a href="" id="paintings"><li>paintings</li></a>
-                    <a href="" id="profile"><li>profile</li></a>
-                    <a href="" id="checkout"><li>checkout</li></a>
-                    <a href="" id="signup-login"><li>login</li></a>
+                    <a href="photos" id="photos"><li>photos</li></a>
+                    <a href="paintings" id="paintings"><li>paintings</li></a>
+                    <a href="profile" id="profile"><li>profile</li></a>
+                    <a href="checkout" id="checkout"><li>checkout</li></a>
+                    <a href="signup-login" id="signup-login"><li>signup-login</li></a>
                 </ul>
             </nav>
         </header>
+        <h1>without box-sizing</h1>
+        <div class="div2"> not the correct size</div>
+        <br>
+        <div class="div1"> this will show the actual size of the box</div>
+        <br>
+        <h1>with box-sizing</h1>
+        <div class="div3"> both boxes are the same size!</div>
+        <br>
+        <div class="div4"> YAy</div>
+        <br>
+        <div id="MAIN">
+        <div style="background-color: blue;">A</div>
+        <div style="background-color: aqua;">B</div>
+        <div style="background-color: darkcyan;">C</div>
+        <div style="background-color: aquamarine;">D</div>
+        <div style="background-color: dodgerblue;">E</div>
+        </div>
+        <br>
+        <h1>The align-content Property</h1>
+        <br>
+        <div id="maine">
+            <div style="background-color: antiquewhite;"></div>
+            <div style="background-color: azure;"></div>
+            <div style="background-color: cornsilk;"></div>
+        </div>
     </body>
 </html>
